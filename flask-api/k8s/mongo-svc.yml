@@ -5,9 +5,9 @@ metadata:
     app: mongo
   name: mongo
 spec:
+  type: NodePort 
   ports:
     - port: 27017
       targetPort: 27017
-  type: NodePort 
   selector:
     app: mongo
